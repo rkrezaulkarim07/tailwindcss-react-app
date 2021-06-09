@@ -14,8 +14,8 @@ const Dropdown = ({ isOpen, toggle }) => {
       <Link to='/' className='p-4'>
         Home
       </Link>
-      <Link to='/menu' className='p-4'>
-        Menu
+      <Link to='/View-Details' className='p-4'>
+        View Details
       </Link>
       <Link to='/about' className='p-4'>
         About

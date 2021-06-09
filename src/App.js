@@ -2,13 +2,12 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import About from './pages/about';
-import Menu from './pages/menu';
-import Footer from './components/Footer';
 import Dropdown from './components/Dropdown';
 import Navbar from './components/Navbar';
 import { useEffect, useState } from 'react';
 import Home from './pages';
-// import Home from './pages';
+import ViewDetails from './pages/ViewDetails';
+import Contact from './pages/Contact';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +38,9 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle}/>
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/menu' component={Menu} />
+        <Route path='/View-Details' component={ViewDetails} />
         <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
       </Switch>
     </>
   );
